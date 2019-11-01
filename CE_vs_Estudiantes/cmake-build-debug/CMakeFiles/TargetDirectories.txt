@@ -1,0 +1,3 @@
+/home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug/CMakeFiles/CE_vs_Estudiantes.dir
+/home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug/CMakeFiles/edit_cache.dir
