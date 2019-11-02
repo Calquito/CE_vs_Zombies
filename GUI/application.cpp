@@ -3,6 +3,13 @@
 #include <math.h>
 #include <unistd.h>
 
+using namespace std;
+/**
+ * @brief carga una imagen y la coloca en una surface
+ * @param path indica la ruta en la que se encuentra el bmp a cargar
+ * @return retorna la superficie con la imagen cargada
+ */
+
 SDL_Surface *load_surface(char const *path)
 {
     SDL_Surface *image_surface = SDL_LoadBMP(path);
@@ -13,6 +20,10 @@ SDL_Surface *load_surface(char const *path)
     return image_surface;
 }
 
+/**
+ * @brief inicializa ventana y variables iniciales
+ * @return nada, inicializa variables
+ */
 Application::Application()
 {
     m_window = SDL_CreateWindow("SDL2 Window",
@@ -45,7 +56,7 @@ Application::Application()
     cont_disparo=0;
 
 
-    m_image = load_surface("/home/allan/Desktop/GUI/tablero.bmp");
+    m_image = load_surface("/home/allan/Desktop/Prueba/GUI/tablero.bmp");
     m_image_position.x = 0;
     m_image_position.y = 0;
     m_image_position.w = 641;
@@ -53,7 +64,7 @@ Application::Application()
     m_image_x = 0.0;
     m_image_y = 0.0;
 
-    planta1= load_surface("/home/allan/Desktop/GUI/Lanzagisantes.bmp");
+    planta1= load_surface("/home/allan/Desktop/Prueba/GUI/Lanzagisantes.bmp");
     planta1_position.x = 550;
     planta1_position.y = 380;
     planta1_position.w = 26;
@@ -70,25 +81,36 @@ Application::~Application()
     SDL_DestroyWindow(m_window);
 }
 
+/**
+ * @brief genera zombie en la posicion especificada
+ * @param x posicion inicial en x
+ * @param posicion inicial en y
+ * @return nada, carga el nuevo zombie en la lista de zombies
+ */
 void Application::generar_zombie(int x, int y){
-        SDL_Surface *nuevo_zombie;
-        SDL_Rect     nuevo_zombie_position;
-        double       nuevo_zombie_x;
-        double       nuevo_zombie_y;
-        nuevo_zombie = load_surface("/home/allan/Desktop/GUI/zombie.bmp");
-        nuevo_zombie_position.w = 26;
-        nuevo_zombie_position.h = 27;
-        nuevo_zombie_x = x*53;
-        nuevo_zombie_y = y*53 ;
-        list_surface_zombie[cont_zombie] = nuevo_zombie;
-        list_rect_zombie[cont_zombie] = nuevo_zombie_position;
-        list_x_zombie[cont_zombie] = nuevo_zombie_x;
-        list_y_zombie[cont_zombie] = nuevo_zombie_y;
-        cont_zombie+=1;
+    SDL_Surface *nuevo_zombie;
+    SDL_Rect     nuevo_zombie_position;
+    double       nuevo_zombie_x;
+    double       nuevo_zombie_y;
+    nuevo_zombie = load_surface("/home/allan/Desktop/Prueba/GUI/zombie.bmp");
+    nuevo_zombie_position.x=x*53;
+    nuevo_zombie_position.y=y*53;
+    nuevo_zombie_position.w = 26;
+    nuevo_zombie_position.h = 27;
+    nuevo_zombie_x = x*53;
+    nuevo_zombie_y = y*53 ;
+    list_surface_zombie[cont_zombie] = nuevo_zombie;
+    list_rect_zombie[cont_zombie] = nuevo_zombie_position;
+    list_x_zombie[cont_zombie] = nuevo_zombie_x;
+    list_y_zombie[cont_zombie] = nuevo_zombie_y;
+    cont_zombie+=1;
 
 
 }
-
+/**
+ * @brief loop del juego, lo mantiene corriendo, genera zombies cuando es necesario y permite colocar plantas en el tablero
+ * @return nada, mantiene el juego corriendo
+ */
 void Application::loop()
 {
     bool keep_window_open = true;
@@ -134,13 +156,15 @@ void Application::loop()
                 int casilla_x=pos_casilla_x*53+5;
                 int casilla_y=pos_casilla_y*53+26;
 
+                J1->Tablero[pos_casilla_x][pos_casilla_y] = 0;
+
                 //nueva planta
                 SDL_Surface *nueva_planta;
                 SDL_Rect nueva_planta_position;
                 double nueva_planta_x;
                 double nueva_planta_y;
 
-                nueva_planta = load_surface("/home/allan/Desktop/GUI/Lanzagisantes.bmp");
+                nueva_planta = load_surface("/home/allan/Desktop/Prueba/GUI/Lanzagisantes.bmp");
                 nueva_planta_position.x = casilla_x ;
                 nueva_planta_position.y = casilla_y ;
                 nueva_planta_position.w = 26;
@@ -159,7 +183,7 @@ void Application::loop()
                 double nuevo_disparo_x;
                 double nuevo_disparo_y;
 
-                nuevo_disparo = load_surface("/home/allan/Desktop/GUI/pregunta.bmp");
+                nuevo_disparo = load_surface("/home/allan/Desktop/Prueba/GUI/pregunta.bmp");
                 nuevo_disparo_position.x = casilla_x ;
                 nuevo_disparo_position.y = casilla_y ;
                 nuevo_disparo_position.w = 26;
@@ -182,8 +206,14 @@ void Application::loop()
         }
 
         if (SDL_GetMouseState(&x, &y) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
-            if( x>550 && x<600 && y>0 && y<200) {
-                generar_zombie(0,11);
+            if( x>0 && x<100 && y>0 && y<100) {
+                J1->generaOleadas();
+                for(int i = 0; i< J1->oleadaActual.size(); i++){
+                    Estudiante *tmp = J1->Estudiantes->index(J1->oleadaActual[i]);
+                    J1->encuentreRutas();
+                    generar_zombie(tmp->pos->y,tmp->pos->x);
+                }
+                sleep(1);
             }
         }
 
@@ -192,6 +222,12 @@ void Application::loop()
     }
 }
 
+/**
+ * @brief actualiza los elementos con movimiento 
+ * @param delta_time funciona similar a un delay(), controla el tiempo entre cada nueva actualizacion
+ * @param file indica cual archivo se debe abrir
+ * @return nada, modifica los objetos en la lista
+ */
 void Application::update(double delta_time)
 {
 
@@ -204,12 +240,24 @@ void Application::update(double delta_time)
 
     int j=0;
     while(j<cont_zombie){
+        //std::cout<<list_x_zombie[j];
+        /*
+        int pos = aux[j];
+        Estudiante *tmp = J1->Estudiantes->index(pos);
+        int x = tmp->path->GetNth(0)->y;
+        int y = tmp->path->GetNth(0)->x;*/
+
         list_y_zombie[j] = list_y_zombie[j] - (5 * delta_time);
         list_rect_zombie[j].y =list_y_zombie[j];
         j++;
     }
 
 }
+
+/**
+ * @brief imprime los elementos en la pantalla
+ * @return nada, imprime los objetos en la pantalla
+ */
 
 void Application::draw()
 {

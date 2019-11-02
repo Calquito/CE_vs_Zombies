@@ -1,15 +1,25 @@
+#ifndef CE_vs_Estudiantes_APPLICATION_H
+#define CE_vs_Estudiantes_APPLICATION_H
+
 #pragma once
 
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <memory>
 #include <vector>
+#include "../Controlador/Juego.h"
 
+/**
+ * @brief declara las variables y listas necesarias
+ * @return nada, solo declara variables
+ */
 class Application
 {
 public:
     Application();
     ~Application();
+
+    Juego *J1 = new Juego();
 
     void loop();
     void update(double delta_time);
@@ -37,10 +47,10 @@ private:
     int tiempo_disparos[20];
 
     //donde se almacenan los zombies del tablero
-    SDL_Surface *list_surface_zombie [20];
-    SDL_Rect list_rect_zombie[20];
-    double list_x_zombie[20];
-    double list_y_zombie[20];
+    SDL_Surface *list_surface_zombie [60];
+    SDL_Rect list_rect_zombie[60];
+    double list_x_zombie[60];
+    double list_y_zombie[60];
 
     //fondo
     SDL_Surface *m_image;
@@ -59,3 +69,5 @@ private:
     SDL_Surface *m_window_surface;
     SDL_Event    m_window_event;
 };
+
+#endif //CE_vs_Estudiantes_APPLICATION_H
