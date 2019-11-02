@@ -1,0 +1,3 @@
+/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/TECVSZOMBIES.dir
+/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/edit_cache.dir

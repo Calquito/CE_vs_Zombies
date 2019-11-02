@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TECVSZOMBIES"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TECVSZOMBIES">
+				<Option output="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/TECVSZOMBIES" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/./include"/>
+					<Add directory="/usr/include/gtk-3.0"/>
+					<Add directory="/usr/include/at-spi2-atk/2.0"/>
+					<Add directory="/usr/include/at-spi-2.0"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/gio-unix-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/libdrm"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/fribidi"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/pixman-1"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/libmount"/>
+					<Add directory="/usr/include/blkid"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 TECVSZOMBIES"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TECVSZOMBIES/fast">
+				<Option output="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/TECVSZOMBIES" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/./include"/>
+					<Add directory="/usr/include/gtk-3.0"/>
+					<Add directory="/usr/include/at-spi2-atk/2.0"/>
+					<Add directory="/usr/include/at-spi-2.0"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/gio-unix-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/libdrm"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/fribidi"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/pixman-1"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/libmount"/>
+					<Add directory="/usr/include/blkid"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 TECVSZOMBIES/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Backtracking.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Backtracking.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/GeneticAlg.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/GeneticAlg.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Juego.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Juego.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/List_Posiciones.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/List_Posiciones.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Matriz.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Matriz.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Pathfinding.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Pathfinding.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Curso.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Curso.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Pos.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Pos.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaCursos.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaCursos.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaEstudiantes.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaEstudiantes.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estudiantes/Estudiante.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estudiantes/Estudiante.h">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/main.cpp">
+			<Option target="TECVSZOMBIES"/>
+		</Unit>
+		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
