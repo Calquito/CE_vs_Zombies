@@ -43,10 +43,10 @@ RM = /snap/clion/92/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/allan/Desktop/CE_vs_Estudiantes
+CMAKE_SOURCE_DIR = /home/allan/Desktop/GUI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug
+CMAKE_BINARY_DIR = /home/allan/Desktop/GUI/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CE_vs_Estudiantes.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/CE_vs_Estudiantes.dir/flags.make
 
 CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o: CMakeFiles/CE_vs_Estudiantes.dir/flags.make
 CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o -c /home/allan/Desktop/CE_vs_Estudiantes/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allan/Desktop/GUI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o -c /home/allan/Desktop/GUI/main.cpp
 
 CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allan/Desktop/CE_vs_Estudiantes/main.cpp > CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allan/Desktop/GUI/main.cpp > CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.i
 
 CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allan/Desktop/CE_vs_Estudiantes/main.cpp -o CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allan/Desktop/GUI/main.cpp -o CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.s
 
 CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o: CMakeFiles/CE_vs_Estudiantes.dir/flags.make
 CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o: ../application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o -c /home/allan/Desktop/CE_vs_Estudiantes/application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allan/Desktop/GUI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o -c /home/allan/Desktop/GUI/application.cpp
 
 CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allan/Desktop/CE_vs_Estudiantes/application.cpp > CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allan/Desktop/GUI/application.cpp > CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.i
 
 CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allan/Desktop/CE_vs_Estudiantes/application.cpp -o CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allan/Desktop/GUI/application.cpp -o CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.s
 
 # Object files for target CE_vs_Estudiantes
 CE_vs_Estudiantes_OBJECTS = \
@@ -95,7 +95,7 @@ CE_vs_Estudiantes: CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o
 CE_vs_Estudiantes: CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o
 CE_vs_Estudiantes: CMakeFiles/CE_vs_Estudiantes.dir/build.make
 CE_vs_Estudiantes: CMakeFiles/CE_vs_Estudiantes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CE_vs_Estudiantes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/allan/Desktop/GUI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CE_vs_Estudiantes"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CE_vs_Estudiantes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/CE_vs_Estudiantes.dir/clean:
 .PHONY : CMakeFiles/CE_vs_Estudiantes.dir/clean
 
 CMakeFiles/CE_vs_Estudiantes.dir/depend:
-	cd /home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/allan/Desktop/CE_vs_Estudiantes /home/allan/Desktop/CE_vs_Estudiantes /home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug /home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug /home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug/CMakeFiles/CE_vs_Estudiantes.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/allan/Desktop/GUI/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/allan/Desktop/GUI /home/allan/Desktop/GUI /home/allan/Desktop/GUI/cmake-build-debug /home/allan/Desktop/GUI/cmake-build-debug /home/allan/Desktop/GUI/cmake-build-debug/CMakeFiles/CE_vs_Estudiantes.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CE_vs_Estudiantes.dir/depend
 

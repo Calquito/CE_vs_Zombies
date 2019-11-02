@@ -45,7 +45,7 @@ Application::Application()
     cont_disparo=0;
 
 
-    m_image = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/tablero.bmp");
+    m_image = load_surface("/home/allan/Desktop/GUI/tablero.bmp");
     m_image_position.x = 0;
     m_image_position.y = 0;
     m_image_position.w = 641;
@@ -53,7 +53,7 @@ Application::Application()
     m_image_x = 0.0;
     m_image_y = 0.0;
 
-    planta1= load_surface("/home/allan/Desktop/CE_vs_Estudiantes/Lanzagisantes.bmp");
+    planta1= load_surface("/home/allan/Desktop/GUI/Lanzagisantes.bmp");
     planta1_position.x = 550;
     planta1_position.y = 380;
     planta1_position.w = 26;
@@ -75,7 +75,7 @@ void Application::generar_zombie(int x, int y){
         SDL_Rect     nuevo_zombie_position;
         double       nuevo_zombie_x;
         double       nuevo_zombie_y;
-        nuevo_zombie = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
+        nuevo_zombie = load_surface("/home/allan/Desktop/GUI/zombie.bmp");
         nuevo_zombie_position.w = 26;
         nuevo_zombie_position.h = 27;
         nuevo_zombie_x = x*53;
@@ -140,7 +140,7 @@ void Application::loop()
                 double nueva_planta_x;
                 double nueva_planta_y;
 
-                nueva_planta = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/Lanzagisantes.bmp");
+                nueva_planta = load_surface("/home/allan/Desktop/GUI/Lanzagisantes.bmp");
                 nueva_planta_position.x = casilla_x ;
                 nueva_planta_position.y = casilla_y ;
                 nueva_planta_position.w = 26;
@@ -159,7 +159,7 @@ void Application::loop()
                 double nuevo_disparo_x;
                 double nuevo_disparo_y;
 
-                nuevo_disparo = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/pregunta.bmp");
+                nuevo_disparo = load_surface("/home/allan/Desktop/GUI/pregunta.bmp");
                 nuevo_disparo_position.x = casilla_x ;
                 nuevo_disparo_position.y = casilla_y ;
                 nuevo_disparo_position.w = 26;
@@ -216,6 +216,7 @@ void Application::draw()
     SDL_FillRect(m_window_surface, NULL, SDL_MapRGB(m_window_surface->format, 0, 0, 0));
     SDL_BlitSurface(m_image, NULL, m_window_surface, &m_image_position);
 
+    //revisar lista de plantas
     int i=0;
     while(i<cont_planta){
         SDL_BlitSurface(list_surface_planta[i], NULL, m_window_surface, &list_rect_planta[i]);
@@ -223,6 +224,7 @@ void Application::draw()
         i++;
     }
 
+    //revisar lista de zombies
     int j=0;
     while(j<cont_zombie){
         SDL_BlitSurface(list_surface_zombie[j], NULL, m_window_surface, &list_rect_zombie[j]);
@@ -230,7 +232,5 @@ void Application::draw()
     }
 
     SDL_BlitSurface(planta1, NULL, m_window_surface, &planta1_position);
-
-
     SDL_UpdateWindowSurface(m_window);
 }

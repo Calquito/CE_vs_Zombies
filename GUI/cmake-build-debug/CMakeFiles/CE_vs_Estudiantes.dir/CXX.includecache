@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/allan/Desktop/CE_vs_Estudiantes/application.cpp
+/home/allan/Desktop/GUI/application.cpp
 application.hpp
-/home/allan/Desktop/CE_vs_Estudiantes/application.hpp
+/home/allan/Desktop/GUI/application.hpp
 cstdlib
 -
 math.h
@@ -16,7 +16,7 @@ math.h
 unistd.h
 -
 
-/home/allan/Desktop/CE_vs_Estudiantes/application.hpp
+/home/allan/Desktop/GUI/application.hpp
 SDL2/SDL.h
 -
 iostream

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/allan/Desktop/CE_vs_Estudiantes/application.cpp" "/home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug/CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o"
-  "/home/allan/Desktop/CE_vs_Estudiantes/main.cpp" "/home/allan/Desktop/CE_vs_Estudiantes/cmake-build-debug/CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o"
+  "/home/allan/Desktop/GUI/application.cpp" "/home/allan/Desktop/GUI/cmake-build-debug/CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o"
+  "/home/allan/Desktop/GUI/main.cpp" "/home/allan/Desktop/GUI/cmake-build-debug/CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
