@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/allan/Desktop/GUI/cmake-build-debug"/>
+				<Option working_dir="/home/allan/Desktop/Prueba/GUI/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/allan/Desktop/GUI/cmake-build-debug"/>
+				<Option working_dir="/home/allan/Desktop/Prueba/GUI/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CE_vs_Estudiantes">
-				<Option output="/home/allan/Desktop/GUI/cmake-build-debug/CE_vs_Estudiantes" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/allan/Desktop/GUI/cmake-build-debug"/>
+				<Option output="/home/allan/Desktop/Prueba/GUI/cmake-build-debug/CE_vs_Estudiantes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/allan/Desktop/Prueba/GUI/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -45,15 +45,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 CE_vs_Estudiantes"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 CE_vs_Estudiantes"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CE_vs_Estudiantes/fast">
-				<Option output="/home/allan/Desktop/GUI/cmake-build-debug/CE_vs_Estudiantes" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/allan/Desktop/GUI/cmake-build-debug"/>
+				<Option output="/home/allan/Desktop/Prueba/GUI/cmake-build-debug/CE_vs_Estudiantes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/allan/Desktop/Prueba/GUI/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -69,33 +69,99 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 CE_vs_Estudiantes/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 CE_vs_Estudiantes/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/allan/Desktop/GUI/cmake-build-debug"/>
+				<Option working_dir="/home/allan/Desktop/Prueba/GUI/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/Prueba/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/allan/Desktop/GUI/application.cpp">
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/Backtracking.cpp">
 			<Option target="CE_vs_Estudiantes"/>
 		</Unit>
-		<Unit filename="/home/allan/Desktop/GUI/application.hpp">
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/Backtracking.h">
 			<Option target="CE_vs_Estudiantes"/>
 		</Unit>
-		<Unit filename="/home/allan/Desktop/GUI/main.cpp">
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/GeneticAlg.cpp">
 			<Option target="CE_vs_Estudiantes"/>
 		</Unit>
-		<Unit filename="/home/allan/Desktop/GUI/CMakeLists.txt">
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/GeneticAlg.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/Juego.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/Juego.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/List_Posiciones.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/List_Posiciones.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/Matriz.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/Matriz.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/Pathfinding.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Controlador/Pathfinding.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Cursos/Curso.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Cursos/Curso.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Cursos/Pos.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Cursos/Pos.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Estructuras/ListaCursos.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Estructuras/ListaCursos.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Estructuras/ListaEstudiantes.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Estructuras/ListaEstudiantes.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Estudiantes/Estudiante.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Estudiantes/Estudiante.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Interfaz/application.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/Interfaz/application.hpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/main.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/Prueba/GUI/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

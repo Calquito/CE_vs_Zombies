@@ -48,10 +48,10 @@ RM = /snap/clion/92/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/allan/Desktop/GUI
+CMAKE_SOURCE_DIR = /home/allan/Desktop/Prueba/GUI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/allan/Desktop/GUI/cmake-build-debug
+CMAKE_BINARY_DIR = /home/allan/Desktop/Prueba/GUI/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/allan/Desktop/GUI/cmake-build-debug/CMakeFiles /home/allan/Desktop/GUI/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/allan/Desktop/Prueba/GUI/cmake-build-debug/CMakeFiles /home/allan/Desktop/Prueba/GUI/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/allan/Desktop/GUI/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/allan/Desktop/Prueba/GUI/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,329 @@ CE_vs_Estudiantes/fast:
 	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/build
 .PHONY : CE_vs_Estudiantes/fast
 
-application.o: application.cpp.o
+Controlador/Backtracking.o: Controlador/Backtracking.cpp.o
 
-.PHONY : application.o
+.PHONY : Controlador/Backtracking.o
 
 # target to build an object file
-application.cpp.o:
-	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o
-.PHONY : application.cpp.o
+Controlador/Backtracking.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Backtracking.cpp.o
+.PHONY : Controlador/Backtracking.cpp.o
 
-application.i: application.cpp.i
+Controlador/Backtracking.i: Controlador/Backtracking.cpp.i
 
-.PHONY : application.i
+.PHONY : Controlador/Backtracking.i
 
 # target to preprocess a source file
-application.cpp.i:
-	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.i
-.PHONY : application.cpp.i
+Controlador/Backtracking.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Backtracking.cpp.i
+.PHONY : Controlador/Backtracking.cpp.i
 
-application.s: application.cpp.s
+Controlador/Backtracking.s: Controlador/Backtracking.cpp.s
 
-.PHONY : application.s
+.PHONY : Controlador/Backtracking.s
 
 # target to generate assembly for a file
-application.cpp.s:
-	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.s
-.PHONY : application.cpp.s
+Controlador/Backtracking.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Backtracking.cpp.s
+.PHONY : Controlador/Backtracking.cpp.s
+
+Controlador/GeneticAlg.o: Controlador/GeneticAlg.cpp.o
+
+.PHONY : Controlador/GeneticAlg.o
+
+# target to build an object file
+Controlador/GeneticAlg.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/GeneticAlg.cpp.o
+.PHONY : Controlador/GeneticAlg.cpp.o
+
+Controlador/GeneticAlg.i: Controlador/GeneticAlg.cpp.i
+
+.PHONY : Controlador/GeneticAlg.i
+
+# target to preprocess a source file
+Controlador/GeneticAlg.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/GeneticAlg.cpp.i
+.PHONY : Controlador/GeneticAlg.cpp.i
+
+Controlador/GeneticAlg.s: Controlador/GeneticAlg.cpp.s
+
+.PHONY : Controlador/GeneticAlg.s
+
+# target to generate assembly for a file
+Controlador/GeneticAlg.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/GeneticAlg.cpp.s
+.PHONY : Controlador/GeneticAlg.cpp.s
+
+Controlador/Juego.o: Controlador/Juego.cpp.o
+
+.PHONY : Controlador/Juego.o
+
+# target to build an object file
+Controlador/Juego.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Juego.cpp.o
+.PHONY : Controlador/Juego.cpp.o
+
+Controlador/Juego.i: Controlador/Juego.cpp.i
+
+.PHONY : Controlador/Juego.i
+
+# target to preprocess a source file
+Controlador/Juego.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Juego.cpp.i
+.PHONY : Controlador/Juego.cpp.i
+
+Controlador/Juego.s: Controlador/Juego.cpp.s
+
+.PHONY : Controlador/Juego.s
+
+# target to generate assembly for a file
+Controlador/Juego.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Juego.cpp.s
+.PHONY : Controlador/Juego.cpp.s
+
+Controlador/List_Posiciones.o: Controlador/List_Posiciones.cpp.o
+
+.PHONY : Controlador/List_Posiciones.o
+
+# target to build an object file
+Controlador/List_Posiciones.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/List_Posiciones.cpp.o
+.PHONY : Controlador/List_Posiciones.cpp.o
+
+Controlador/List_Posiciones.i: Controlador/List_Posiciones.cpp.i
+
+.PHONY : Controlador/List_Posiciones.i
+
+# target to preprocess a source file
+Controlador/List_Posiciones.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/List_Posiciones.cpp.i
+.PHONY : Controlador/List_Posiciones.cpp.i
+
+Controlador/List_Posiciones.s: Controlador/List_Posiciones.cpp.s
+
+.PHONY : Controlador/List_Posiciones.s
+
+# target to generate assembly for a file
+Controlador/List_Posiciones.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/List_Posiciones.cpp.s
+.PHONY : Controlador/List_Posiciones.cpp.s
+
+Controlador/Matriz.o: Controlador/Matriz.cpp.o
+
+.PHONY : Controlador/Matriz.o
+
+# target to build an object file
+Controlador/Matriz.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Matriz.cpp.o
+.PHONY : Controlador/Matriz.cpp.o
+
+Controlador/Matriz.i: Controlador/Matriz.cpp.i
+
+.PHONY : Controlador/Matriz.i
+
+# target to preprocess a source file
+Controlador/Matriz.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Matriz.cpp.i
+.PHONY : Controlador/Matriz.cpp.i
+
+Controlador/Matriz.s: Controlador/Matriz.cpp.s
+
+.PHONY : Controlador/Matriz.s
+
+# target to generate assembly for a file
+Controlador/Matriz.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Matriz.cpp.s
+.PHONY : Controlador/Matriz.cpp.s
+
+Controlador/Pathfinding.o: Controlador/Pathfinding.cpp.o
+
+.PHONY : Controlador/Pathfinding.o
+
+# target to build an object file
+Controlador/Pathfinding.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Pathfinding.cpp.o
+.PHONY : Controlador/Pathfinding.cpp.o
+
+Controlador/Pathfinding.i: Controlador/Pathfinding.cpp.i
+
+.PHONY : Controlador/Pathfinding.i
+
+# target to preprocess a source file
+Controlador/Pathfinding.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Pathfinding.cpp.i
+.PHONY : Controlador/Pathfinding.cpp.i
+
+Controlador/Pathfinding.s: Controlador/Pathfinding.cpp.s
+
+.PHONY : Controlador/Pathfinding.s
+
+# target to generate assembly for a file
+Controlador/Pathfinding.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Controlador/Pathfinding.cpp.s
+.PHONY : Controlador/Pathfinding.cpp.s
+
+Cursos/Curso.o: Cursos/Curso.cpp.o
+
+.PHONY : Cursos/Curso.o
+
+# target to build an object file
+Cursos/Curso.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Cursos/Curso.cpp.o
+.PHONY : Cursos/Curso.cpp.o
+
+Cursos/Curso.i: Cursos/Curso.cpp.i
+
+.PHONY : Cursos/Curso.i
+
+# target to preprocess a source file
+Cursos/Curso.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Cursos/Curso.cpp.i
+.PHONY : Cursos/Curso.cpp.i
+
+Cursos/Curso.s: Cursos/Curso.cpp.s
+
+.PHONY : Cursos/Curso.s
+
+# target to generate assembly for a file
+Cursos/Curso.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Cursos/Curso.cpp.s
+.PHONY : Cursos/Curso.cpp.s
+
+Cursos/Pos.o: Cursos/Pos.cpp.o
+
+.PHONY : Cursos/Pos.o
+
+# target to build an object file
+Cursos/Pos.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Cursos/Pos.cpp.o
+.PHONY : Cursos/Pos.cpp.o
+
+Cursos/Pos.i: Cursos/Pos.cpp.i
+
+.PHONY : Cursos/Pos.i
+
+# target to preprocess a source file
+Cursos/Pos.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Cursos/Pos.cpp.i
+.PHONY : Cursos/Pos.cpp.i
+
+Cursos/Pos.s: Cursos/Pos.cpp.s
+
+.PHONY : Cursos/Pos.s
+
+# target to generate assembly for a file
+Cursos/Pos.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Cursos/Pos.cpp.s
+.PHONY : Cursos/Pos.cpp.s
+
+Estructuras/ListaCursos.o: Estructuras/ListaCursos.cpp.o
+
+.PHONY : Estructuras/ListaCursos.o
+
+# target to build an object file
+Estructuras/ListaCursos.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Estructuras/ListaCursos.cpp.o
+.PHONY : Estructuras/ListaCursos.cpp.o
+
+Estructuras/ListaCursos.i: Estructuras/ListaCursos.cpp.i
+
+.PHONY : Estructuras/ListaCursos.i
+
+# target to preprocess a source file
+Estructuras/ListaCursos.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Estructuras/ListaCursos.cpp.i
+.PHONY : Estructuras/ListaCursos.cpp.i
+
+Estructuras/ListaCursos.s: Estructuras/ListaCursos.cpp.s
+
+.PHONY : Estructuras/ListaCursos.s
+
+# target to generate assembly for a file
+Estructuras/ListaCursos.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Estructuras/ListaCursos.cpp.s
+.PHONY : Estructuras/ListaCursos.cpp.s
+
+Estructuras/ListaEstudiantes.o: Estructuras/ListaEstudiantes.cpp.o
+
+.PHONY : Estructuras/ListaEstudiantes.o
+
+# target to build an object file
+Estructuras/ListaEstudiantes.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Estructuras/ListaEstudiantes.cpp.o
+.PHONY : Estructuras/ListaEstudiantes.cpp.o
+
+Estructuras/ListaEstudiantes.i: Estructuras/ListaEstudiantes.cpp.i
+
+.PHONY : Estructuras/ListaEstudiantes.i
+
+# target to preprocess a source file
+Estructuras/ListaEstudiantes.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Estructuras/ListaEstudiantes.cpp.i
+.PHONY : Estructuras/ListaEstudiantes.cpp.i
+
+Estructuras/ListaEstudiantes.s: Estructuras/ListaEstudiantes.cpp.s
+
+.PHONY : Estructuras/ListaEstudiantes.s
+
+# target to generate assembly for a file
+Estructuras/ListaEstudiantes.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Estructuras/ListaEstudiantes.cpp.s
+.PHONY : Estructuras/ListaEstudiantes.cpp.s
+
+Estudiantes/Estudiante.o: Estudiantes/Estudiante.cpp.o
+
+.PHONY : Estudiantes/Estudiante.o
+
+# target to build an object file
+Estudiantes/Estudiante.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Estudiantes/Estudiante.cpp.o
+.PHONY : Estudiantes/Estudiante.cpp.o
+
+Estudiantes/Estudiante.i: Estudiantes/Estudiante.cpp.i
+
+.PHONY : Estudiantes/Estudiante.i
+
+# target to preprocess a source file
+Estudiantes/Estudiante.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Estudiantes/Estudiante.cpp.i
+.PHONY : Estudiantes/Estudiante.cpp.i
+
+Estudiantes/Estudiante.s: Estudiantes/Estudiante.cpp.s
+
+.PHONY : Estudiantes/Estudiante.s
+
+# target to generate assembly for a file
+Estudiantes/Estudiante.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Estudiantes/Estudiante.cpp.s
+.PHONY : Estudiantes/Estudiante.cpp.s
+
+Interfaz/application.o: Interfaz/application.cpp.o
+
+.PHONY : Interfaz/application.o
+
+# target to build an object file
+Interfaz/application.cpp.o:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Interfaz/application.cpp.o
+.PHONY : Interfaz/application.cpp.o
+
+Interfaz/application.i: Interfaz/application.cpp.i
+
+.PHONY : Interfaz/application.i
+
+# target to preprocess a source file
+Interfaz/application.cpp.i:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Interfaz/application.cpp.i
+.PHONY : Interfaz/application.cpp.i
+
+Interfaz/application.s: Interfaz/application.cpp.s
+
+.PHONY : Interfaz/application.s
+
+# target to generate assembly for a file
+Interfaz/application.cpp.s:
+	$(MAKE) -f CMakeFiles/CE_vs_Estudiantes.dir/build.make CMakeFiles/CE_vs_Estudiantes.dir/Interfaz/application.cpp.s
+.PHONY : Interfaz/application.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +483,42 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CE_vs_Estudiantes"
 	@echo "... edit_cache"
-	@echo "... application.o"
-	@echo "... application.i"
-	@echo "... application.s"
+	@echo "... Controlador/Backtracking.o"
+	@echo "... Controlador/Backtracking.i"
+	@echo "... Controlador/Backtracking.s"
+	@echo "... Controlador/GeneticAlg.o"
+	@echo "... Controlador/GeneticAlg.i"
+	@echo "... Controlador/GeneticAlg.s"
+	@echo "... Controlador/Juego.o"
+	@echo "... Controlador/Juego.i"
+	@echo "... Controlador/Juego.s"
+	@echo "... Controlador/List_Posiciones.o"
+	@echo "... Controlador/List_Posiciones.i"
+	@echo "... Controlador/List_Posiciones.s"
+	@echo "... Controlador/Matriz.o"
+	@echo "... Controlador/Matriz.i"
+	@echo "... Controlador/Matriz.s"
+	@echo "... Controlador/Pathfinding.o"
+	@echo "... Controlador/Pathfinding.i"
+	@echo "... Controlador/Pathfinding.s"
+	@echo "... Cursos/Curso.o"
+	@echo "... Cursos/Curso.i"
+	@echo "... Cursos/Curso.s"
+	@echo "... Cursos/Pos.o"
+	@echo "... Cursos/Pos.i"
+	@echo "... Cursos/Pos.s"
+	@echo "... Estructuras/ListaCursos.o"
+	@echo "... Estructuras/ListaCursos.i"
+	@echo "... Estructuras/ListaCursos.s"
+	@echo "... Estructuras/ListaEstudiantes.o"
+	@echo "... Estructuras/ListaEstudiantes.i"
+	@echo "... Estructuras/ListaEstudiantes.s"
+	@echo "... Estudiantes/Estudiante.o"
+	@echo "... Estudiantes/Estudiante.i"
+	@echo "... Estudiantes/Estudiante.s"
+	@echo "... Interfaz/application.o"
+	@echo "... Interfaz/application.i"
+	@echo "... Interfaz/application.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
