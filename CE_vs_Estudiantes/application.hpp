@@ -3,6 +3,7 @@
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <memory>
+#include <vector>
 
 class Application
 {
@@ -14,18 +15,34 @@ public:
     void update(double delta_time);
     void draw();
 private:
-    int cont;
+    //varaiables generales
+    int cont_planta;
+    int cont_disparo;
+    bool planta_presionada;
 
-    SDL_Surface *list_surface [20];
-    SDL_Rect list_rect[20];
-    double list_x[20];
-    double list_y[20];
+    //donde se almacenan las plantas del tablero
+    SDL_Surface *list_surface_planta [20];
+    SDL_Rect list_rect_planta[20];
+    double list_x_planta[20];
+    double list_y_planta[20];
+
+    //donde se almacenan los disparos de las plantas del tablero
+    SDL_Surface *list_surface_disparo [20];
+    SDL_Rect list_rect_disparo[20];
+    double list_x_disparo[20];
+    double list_y_disparo[20];
 
 
     SDL_Surface *m_image;
     SDL_Rect     m_image_position;
     double       m_image_x;
     double       m_image_y;
+
+    //planta seleccionable
+    SDL_Surface *planta1;
+    SDL_Rect     planta1_position;
+    double       planta1_x;
+    double       planta1_y;
 
     SDL_Surface *zombie1;
     SDL_Rect     zombie1_position;

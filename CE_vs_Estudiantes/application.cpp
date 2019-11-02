@@ -1,5 +1,6 @@
 #include "application.hpp"
 #include <cstdlib>
+#include <math.h>
 
 SDL_Surface *load_surface(char const *path)
 {
@@ -35,6 +36,11 @@ Application::Application()
         return;
     }
 
+    //definicion de variables generales
+    planta_presionada=false;
+    cont_planta=0;
+    cont_disparo=0;
+
     m_image = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/tablero.bmp");
     m_image_position.x = 0;
     m_image_position.y = 0;
@@ -43,7 +49,13 @@ Application::Application()
     m_image_x = 0.0;
     m_image_y = 0.0;
 
-    cont=0;
+    planta1= load_surface("/home/allan/Desktop/CE_vs_Estudiantes/Lanzagisantes.bmp");
+    planta1_position.x = 550;
+    planta1_position.y = 380;
+    planta1_position.w = 26;
+    planta1_position.h = 27;
+    planta1_x = 550;
+    planta1_y = 380;
 
     zombie1 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
     zombie1_position.x = 13;
@@ -153,8 +165,77 @@ void Application::loop()
 
         int r = (rand() % 100) + 1;
 
-        update(1.0/40.0);
+        //presionar planta
+        int x;
+        int y;
+        /*SDL_PumpEvents();
+        SDL_Log("Mouse Button 1 (left) is pressed.");
+        printf("Decimals: %d %ld\n", x,y);*/
+        if (SDL_GetMouseState(&x, &y) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
+            if( x>550 && x<576 && y>377 && y<415) {
+                planta_presionada=true;
+                //printf("planta presionada");
+            }
+        }
+
+        //generar nueva planta y controlarla
+        if(planta_presionada) {
+            if (SDL_GetMouseState(&x, &y) & SDL_BUTTON(SDL_BUTTON_LEFT) && x<535) {
+
+                //posicion en la que se pondra la planta
+                int pos_casilla_x = x /53;
+                int pos_casilla_y = y /53;
+                int casilla_x=pos_casilla_x*53+5;
+                int casilla_y=pos_casilla_y*53+26;
+
+                //nueva planta
+                SDL_Surface *nueva_planta;
+                SDL_Rect nueva_planta_position;
+                double nueva_planta_x;
+                double nueva_planta_y;
+
+                nueva_planta = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/Lanzagisantes.bmp");
+                nueva_planta_position.x = casilla_x ;
+                nueva_planta_position.y = casilla_y ;
+                nueva_planta_position.w = 26;
+                nueva_planta_position.h = 27;
+                nueva_planta_x =  casilla_x;
+                nueva_planta_y = casilla_y ;
+
+                list_surface_planta[cont_planta] = nueva_planta;
+                list_rect_planta[cont_planta] = nueva_planta_position;
+                list_x_planta[cont_planta] = nueva_planta_x;
+                list_y_planta[cont_planta] = nueva_planta_y;
+
+                //nuevo disparo
+                SDL_Surface *nuevo_disparo;
+                SDL_Rect nuevo_disparo_position;
+                double nuevo_disparo_x;
+                double nuevo_disparo_y;
+
+                nuevo_disparo = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/pregunta.bmp");
+                nuevo_disparo_position.x = casilla_x ;
+                nuevo_disparo_position.y = casilla_y ;
+                nuevo_disparo_position.w = 26;
+                nuevo_disparo_position.h = 27;
+                nuevo_disparo_x =  casilla_x;
+                nuevo_disparo_y = casilla_y ;
+
+                list_surface_disparo[cont_disparo] = nuevo_disparo;
+                list_rect_disparo[cont_disparo] = nuevo_disparo_position;
+                list_x_disparo[cont_disparo] = nuevo_disparo_x;
+                list_y_disparo[cont_disparo] = nuevo_disparo_y;
+
+                //condiciones finales
+                cont_planta += 1;
+                planta_presionada = false;
+
+            }
+        }
+        update(1.0 / 40.0);
         draw();
+
+
     }
 }
 
@@ -162,7 +243,7 @@ void Application::update(double delta_time)
 {
     int random_number= ( std::rand() % ( 3  + 1 ) );
 
-
+    //actualiza zombies
     zombie1_y = zombie1_y - (5 * delta_time);
     zombie1_position.y =zombie1_y;
 
@@ -199,6 +280,16 @@ void Application::draw()
 {
     SDL_FillRect(m_window_surface, NULL, SDL_MapRGB(m_window_surface->format, 0, 0, 0));
     SDL_BlitSurface(m_image, NULL, m_window_surface, &m_image_position);
+
+    int i=0;
+    while(i<cont_planta){
+        SDL_BlitSurface(list_surface_planta[i], NULL, m_window_surface, &list_rect_planta[i]);
+        //SDL_BlitSurface(list_surface_disparo[i], NULL, m_window_surface, &list_rect_disparo[i]);
+        i++;
+    }
+
+
+    SDL_BlitSurface(planta1, NULL, m_window_surface, &planta1_position);
     SDL_BlitSurface(zombie1, NULL, m_window_surface, &zombie1_position);
     SDL_BlitSurface(zombie2, NULL, m_window_surface, &zombie2_position);
     SDL_BlitSurface(zombie3, NULL, m_window_surface, &zombie3_position);

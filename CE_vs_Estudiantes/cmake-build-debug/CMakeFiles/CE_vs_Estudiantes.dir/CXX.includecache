@@ -11,6 +11,8 @@ application.hpp
 /home/allan/Desktop/CE_vs_Estudiantes/application.hpp
 cstdlib
 -
+math.h
+-
 
 /home/allan/Desktop/CE_vs_Estudiantes/application.hpp
 SDL2/SDL.h
@@ -19,4 +21,12 @@ iostream
 -
 memory
 -
+vector
+-
+
+/home/allan/Desktop/CE_vs_Estudiantes/main.cpp
+iostream
+-
+application.hpp
+/home/allan/Desktop/CE_vs_Estudiantes/application.hpp
 
