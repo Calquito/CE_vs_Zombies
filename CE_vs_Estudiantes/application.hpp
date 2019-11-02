@@ -31,6 +31,7 @@ private:
     SDL_Rect list_rect_disparo[20];
     double list_x_disparo[20];
     double list_y_disparo[20];
+    int tiempo_disparos[20];
 
 
     SDL_Surface *m_image;

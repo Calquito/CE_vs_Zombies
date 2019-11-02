@@ -41,6 +41,7 @@ Application::Application()
     cont_planta=0;
     cont_disparo=0;
 
+
     m_image = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/tablero.bmp");
     m_image_position.x = 0;
     m_image_position.y = 0;
@@ -154,7 +155,10 @@ void Application::loop()
     while(keep_window_open)
     {
         while(SDL_PollEvent(&m_window_event) > 0)
-        {
+        {    SDL_Surface *list_surface_disparo [20];
+    SDL_Rect list_rect_disparo[20];
+    double list_x_disparo[20];
+    double list_y_disparo[20];
             switch(m_window_event.type)
             {
                 case SDL_QUIT:
@@ -164,6 +168,7 @@ void Application::loop()
         }
 
         int r = (rand() % 100) + 1;
+
 
         //presionar planta
         int x;
@@ -225,13 +230,16 @@ void Application::loop()
                 list_rect_disparo[cont_disparo] = nuevo_disparo_position;
                 list_x_disparo[cont_disparo] = nuevo_disparo_x;
                 list_y_disparo[cont_disparo] = nuevo_disparo_y;
+                tiempo_disparos[cont_disparo]=0;
 
                 //condiciones finales
                 cont_planta += 1;
+                cont_disparo += 1;
                 planta_presionada = false;
 
             }
         }
+
         update(1.0 / 40.0);
         draw();
 
@@ -241,7 +249,13 @@ void Application::loop()
 
 void Application::update(double delta_time)
 {
-    int random_number= ( std::rand() % ( 3  + 1 ) );
+
+   int i=0;
+   while(i<cont_disparo){
+       list_y_disparo[i] = list_y_disparo[i] + (5 * delta_time);
+       list_rect_disparo[i].y =list_y_disparo[i];
+       i++;
+   }
 
     //actualiza zombies
     zombie1_y = zombie1_y - (5 * delta_time);
@@ -284,7 +298,7 @@ void Application::draw()
     int i=0;
     while(i<cont_planta){
         SDL_BlitSurface(list_surface_planta[i], NULL, m_window_surface, &list_rect_planta[i]);
-        //SDL_BlitSurface(list_surface_disparo[i], NULL, m_window_surface, &list_rect_disparo[i]);
+        SDL_BlitSurface(list_surface_disparo[i], NULL, m_window_surface, &list_rect_disparo[i]);
         i++;
     }
 
