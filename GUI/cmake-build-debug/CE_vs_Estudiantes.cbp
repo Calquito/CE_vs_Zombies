@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CE_vs_Estudiantes"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CE_vs_Estudiantes">
+				<Option output="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/CE_vs_Estudiantes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 CE_vs_Estudiantes"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CE_vs_Estudiantes/fast">
+				<Option output="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/CE_vs_Estudiantes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 CE_vs_Estudiantes/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/Backtracking.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/Backtracking.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/GeneticAlg.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/GeneticAlg.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/Juego.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/Juego.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/List_Posiciones.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/List_Posiciones.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/Matriz.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/Matriz.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/Pathfinding.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Controlador/Pathfinding.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Cursos/Curso.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Cursos/Curso.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Cursos/Pos.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Cursos/Pos.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Estructuras/ListaCursos.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Estructuras/ListaCursos.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Estructuras/ListaEstudiantes.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Estructuras/ListaEstudiantes.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Estudiantes/Estudiante.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Estudiantes/Estudiante.h">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Interfaz/application.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/Interfaz/application.hpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/main.cpp">
+			<Option target="CE_vs_Estudiantes"/>
+		</Unit>
+		<Unit filename="/home/allan/Desktop/CE_vs_Zombies-master/CE_vs_Zombies-master/GUI/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
