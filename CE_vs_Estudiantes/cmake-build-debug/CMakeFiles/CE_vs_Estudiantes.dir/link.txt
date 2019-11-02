@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/CE_vs_Estudiantes.dir/main.cpp.o CMakeFiles/CE_vs_Estudiantes.dir/application.cpp.o  -o CE_vs_Estudiantes -lSDL2 
