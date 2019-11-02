@@ -1,6 +1,7 @@
 #include "application.hpp"
 #include <cstdlib>
 #include <math.h>
+#include <unistd.h>
 
 SDL_Surface *load_surface(char const *path)
 {
@@ -38,6 +39,8 @@ Application::Application()
 
     //definicion de variables generales
     planta_presionada=false;
+    cont_zombie=0;
+    cont_zombies=0;
     cont_planta=0;
     cont_disparo=0;
 
@@ -58,88 +61,6 @@ Application::Application()
     planta1_x = 550;
     planta1_y = 380;
 
-    zombie1 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie1_position.x = 13;
-    zombie1_position.y = 604;
-    zombie1_position.w = 26;
-    zombie1_position.h = 43;
-    zombie1_x = 13;
-    zombie1_y = 604;
-
-    zombie2 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie2_position.x = 66;
-    zombie2_position.y = 604;
-    zombie2_position.w = 26;
-    zombie2_position.h = 43;
-    zombie2_x = 66;
-    zombie2_y = 604;
-
-
-    zombie3 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie3_position.x = 119;
-    zombie3_position.y = 604;
-    zombie3_position.w = 26;
-    zombie3_position.h = 43;
-    zombie3_x = 119;
-    zombie3_y = 604;
-
-    zombie4 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie4_position.x = 172;
-    zombie4_position.y = 604;
-    zombie4_position.w = 26;
-    zombie4_position.h = 43;
-    zombie4_x = 172;
-    zombie4_y = 604;
-
-    zombie5 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie5_position.x = 225;
-    zombie5_position.y = 604;
-    zombie5_position.w = 26;
-    zombie5_position.h = 43;
-    zombie5_x = 225;
-    zombie5_y = 604;
-
-    zombie6 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie6_position.x = 278;
-    zombie6_position.y = 604;
-    zombie6_position.w = 26;
-    zombie6_position.h = 43;
-    zombie6_x = 278;
-    zombie6_y = 604;
-
-    zombie7 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie7_position.x = 331;
-    zombie7_position.y = 604;
-    zombie7_position.w = 26;
-    zombie7_position.h = 43;
-    zombie7_x = 331;
-    zombie7_y = 604;
-
-    zombie8 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie8_position.x = 384;
-    zombie8_position.y = 604;
-    zombie8_position.w = 26;
-    zombie8_position.h = 43;
-    zombie8_x = 384;
-    zombie8_y = 604;
-
-    zombie9 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie9_position.x = 437;
-    zombie9_position.y = 604;
-    zombie9_position.w = 26;
-    zombie6_position.h = 43;
-    zombie9_x = 437;
-    zombie9_y = 604;
-
-    zombie10 = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
-    zombie10_position.x = 490;
-    zombie10_position.y = 604;
-    zombie10_position.w = 26;
-    zombie10_position.h = 43;
-    zombie10_x = 490;
-    zombie10_y = 604;
-
-
 
 }
 
@@ -149,6 +70,25 @@ Application::~Application()
     SDL_DestroyWindow(m_window);
 }
 
+void Application::generar_zombie(int x, int y){
+        SDL_Surface *nuevo_zombie;
+        SDL_Rect     nuevo_zombie_position;
+        double       nuevo_zombie_x;
+        double       nuevo_zombie_y;
+        nuevo_zombie = load_surface("/home/allan/Desktop/CE_vs_Estudiantes/zombie.bmp");
+        nuevo_zombie_position.w = 26;
+        nuevo_zombie_position.h = 27;
+        nuevo_zombie_x = x*53;
+        nuevo_zombie_y = y*53 ;
+        list_surface_zombie[cont_zombie] = nuevo_zombie;
+        list_rect_zombie[cont_zombie] = nuevo_zombie_position;
+        list_x_zombie[cont_zombie] = nuevo_zombie_x;
+        list_y_zombie[cont_zombie] = nuevo_zombie_y;
+        cont_zombie+=1;
+
+
+}
+
 void Application::loop()
 {
     bool keep_window_open = true;
@@ -156,9 +96,9 @@ void Application::loop()
     {
         while(SDL_PollEvent(&m_window_event) > 0)
         {    SDL_Surface *list_surface_disparo [20];
-    SDL_Rect list_rect_disparo[20];
-    double list_x_disparo[20];
-    double list_y_disparo[20];
+            SDL_Rect list_rect_disparo[20];
+            double list_x_disparo[20];
+            double list_y_disparo[20];
             switch(m_window_event.type)
             {
                 case SDL_QUIT:
@@ -167,7 +107,7 @@ void Application::loop()
             }
         }
 
-        int r = (rand() % 100) + 1;
+        int r = (rand() % 1000) + 1;
 
 
         //presionar planta
@@ -179,6 +119,8 @@ void Application::loop()
         if (SDL_GetMouseState(&x, &y) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
             if( x>550 && x<576 && y>377 && y<415) {
                 planta_presionada=true;
+                usleep(100000);
+
                 //printf("planta presionada");
             }
         }
@@ -186,7 +128,6 @@ void Application::loop()
         //generar nueva planta y controlarla
         if(planta_presionada) {
             if (SDL_GetMouseState(&x, &y) & SDL_BUTTON(SDL_BUTTON_LEFT) && x<535) {
-
                 //posicion en la que se pondra la planta
                 int pos_casilla_x = x /53;
                 int pos_casilla_y = y /53;
@@ -236,57 +177,37 @@ void Application::loop()
                 cont_planta += 1;
                 cont_disparo += 1;
                 planta_presionada = false;
+            }
 
+        }
+
+        if (SDL_GetMouseState(&x, &y) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
+            if( x>550 && x<600 && y>0 && y<200) {
+                generar_zombie(0,11);
             }
         }
 
         update(1.0 / 40.0);
         draw();
-
-
     }
 }
 
 void Application::update(double delta_time)
 {
 
-   int i=0;
-   while(i<cont_disparo){
-       list_y_disparo[i] = list_y_disparo[i] + (5 * delta_time);
-       list_rect_disparo[i].y =list_y_disparo[i];
-       i++;
-   }
+    int i=0;
+    while(i<cont_disparo){
+        list_y_disparo[i] = list_y_disparo[i] + (5 * delta_time);
+        list_rect_disparo[i].y =list_y_disparo[i];
+        i++;
+    }
 
-    //actualiza zombies
-    zombie1_y = zombie1_y - (5 * delta_time);
-    zombie1_position.y =zombie1_y;
-
-    zombie2_y = zombie2_y - (5 * delta_time);
-    zombie2_position.y =zombie2_y;
-
-    zombie3_y = zombie3_y - (5 * delta_time);
-    zombie3_position.y =zombie3_y;
-
-    zombie4_y = zombie4_y - (5 * delta_time);
-    zombie4_position.y =zombie4_y;
-
-    zombie5_y = zombie5_y - (5 * delta_time);
-    zombie5_position.y =zombie5_y;
-
-    zombie6_y = zombie6_y - (5 * delta_time);
-    zombie6_position.y =zombie6_y;
-
-    zombie7_y = zombie7_y - (5 * delta_time);
-    zombie7_position.y =zombie7_y;
-
-    zombie8_y = zombie8_y - (5 * delta_time);
-    zombie8_position.y =zombie8_y;
-
-    zombie9_y = zombie9_y - (5 * delta_time);
-    zombie9_position.y =zombie9_y;
-
-    zombie10_y = zombie10_y - (5 * delta_time);
-    zombie10_position.y =zombie10_y;
+    int j=0;
+    while(j<cont_zombie){
+        list_y_zombie[j] = list_y_zombie[j] - (5 * delta_time);
+        list_rect_zombie[j].y =list_y_zombie[j];
+        j++;
+    }
 
 }
 
@@ -302,17 +223,14 @@ void Application::draw()
         i++;
     }
 
+    int j=0;
+    while(j<cont_zombie){
+        SDL_BlitSurface(list_surface_zombie[j], NULL, m_window_surface, &list_rect_zombie[j]);
+        j++;
+    }
 
     SDL_BlitSurface(planta1, NULL, m_window_surface, &planta1_position);
-    SDL_BlitSurface(zombie1, NULL, m_window_surface, &zombie1_position);
-    SDL_BlitSurface(zombie2, NULL, m_window_surface, &zombie2_position);
-    SDL_BlitSurface(zombie3, NULL, m_window_surface, &zombie3_position);
-    SDL_BlitSurface(zombie4, NULL, m_window_surface, &zombie4_position);
-    SDL_BlitSurface(zombie5, NULL, m_window_surface, &zombie5_position);
-    SDL_BlitSurface(zombie6, NULL, m_window_surface, &zombie6_position);
-    SDL_BlitSurface(zombie7, NULL, m_window_surface, &zombie7_position);
-    SDL_BlitSurface(zombie8, NULL, m_window_surface, &zombie8_position);
-    SDL_BlitSurface(zombie9, NULL, m_window_surface, &zombie9_position);
-    SDL_BlitSurface(zombie10, NULL, m_window_surface, &zombie10_position);
+
+
     SDL_UpdateWindowSurface(m_window);
 }

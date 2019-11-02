@@ -13,6 +13,8 @@ cstdlib
 -
 math.h
 -
+unistd.h
+-
 
 /home/allan/Desktop/CE_vs_Estudiantes/application.hpp
 SDL2/SDL.h
