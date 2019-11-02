@@ -9,6 +9,10 @@
 #include <vector>
 #include "../Controlador/Juego.h"
 
+/**
+ * @brief declara las variables y listas necesarias
+ * @return nada, solo declara variables
+ */
 class Application
 {
 public:

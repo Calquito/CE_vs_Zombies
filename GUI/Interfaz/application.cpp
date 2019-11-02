@@ -4,6 +4,11 @@
 #include <unistd.h>
 
 using namespace std;
+/**
+ * @brief carga una imagen y la coloca en una surface
+ * @param path indica la ruta en la que se encuentra el bmp a cargar
+ * @return retorna la superficie con la imagen cargada
+ */
 
 SDL_Surface *load_surface(char const *path)
 {
@@ -15,6 +20,10 @@ SDL_Surface *load_surface(char const *path)
     return image_surface;
 }
 
+/**
+ * @brief inicializa ventana y variables iniciales
+ * @return nada, inicializa variables
+ */
 Application::Application()
 {
     m_window = SDL_CreateWindow("SDL2 Window",
@@ -72,6 +81,12 @@ Application::~Application()
     SDL_DestroyWindow(m_window);
 }
 
+/**
+ * @brief genera zombie en la posicion especificada
+ * @param x posicion inicial en x
+ * @param posicion inicial en y
+ * @return nada, carga el nuevo zombie en la lista de zombies
+ */
 void Application::generar_zombie(int x, int y){
     SDL_Surface *nuevo_zombie;
     SDL_Rect     nuevo_zombie_position;
@@ -92,7 +107,10 @@ void Application::generar_zombie(int x, int y){
 
 
 }
-
+/**
+ * @brief loop del juego, lo mantiene corriendo, genera zombies cuando es necesario y permite colocar plantas en el tablero
+ * @return nada, mantiene el juego corriendo
+ */
 void Application::loop()
 {
     bool keep_window_open = true;
@@ -204,6 +222,12 @@ void Application::loop()
     }
 }
 
+/**
+ * @brief actualiza los elementos con movimiento 
+ * @param delta_time funciona similar a un delay(), controla el tiempo entre cada nueva actualizacion
+ * @param file indica cual archivo se debe abrir
+ * @return nada, modifica los objetos en la lista
+ */
 void Application::update(double delta_time)
 {
 
@@ -229,6 +253,11 @@ void Application::update(double delta_time)
     }
 
 }
+
+/**
+ * @brief imprime los elementos en la pantalla
+ * @return nada, imprime los objetos en la pantalla
+ */
 
 void Application::draw()
 {
