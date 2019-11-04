@@ -152,12 +152,6 @@
 		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/List_Posiciones.h">
 			<Option target="TECVSZOMBIES"/>
 		</Unit>
-		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Matriz.cpp">
-			<Option target="TECVSZOMBIES"/>
-		</Unit>
-		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Matriz.h">
-			<Option target="TECVSZOMBIES"/>
-		</Unit>
 		<Unit filename="/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Pathfinding.cpp">
 			<Option target="TECVSZOMBIES"/>
 		</Unit>

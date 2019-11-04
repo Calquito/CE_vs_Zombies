@@ -231,33 +231,6 @@ Controlador/List_Posiciones.cpp.s:
 	$(MAKE) -f CMakeFiles/TECVSZOMBIES.dir/build.make CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.s
 .PHONY : Controlador/List_Posiciones.cpp.s
 
-Controlador/Matriz.o: Controlador/Matriz.cpp.o
-
-.PHONY : Controlador/Matriz.o
-
-# target to build an object file
-Controlador/Matriz.cpp.o:
-	$(MAKE) -f CMakeFiles/TECVSZOMBIES.dir/build.make CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.o
-.PHONY : Controlador/Matriz.cpp.o
-
-Controlador/Matriz.i: Controlador/Matriz.cpp.i
-
-.PHONY : Controlador/Matriz.i
-
-# target to preprocess a source file
-Controlador/Matriz.cpp.i:
-	$(MAKE) -f CMakeFiles/TECVSZOMBIES.dir/build.make CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.i
-.PHONY : Controlador/Matriz.cpp.i
-
-Controlador/Matriz.s: Controlador/Matriz.cpp.s
-
-.PHONY : Controlador/Matriz.s
-
-# target to generate assembly for a file
-Controlador/Matriz.cpp.s:
-	$(MAKE) -f CMakeFiles/TECVSZOMBIES.dir/build.make CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.s
-.PHONY : Controlador/Matriz.cpp.s
-
 Controlador/Pathfinding.o: Controlador/Pathfinding.cpp.o
 
 .PHONY : Controlador/Pathfinding.o
@@ -468,9 +441,6 @@ help:
 	@echo "... Controlador/List_Posiciones.o"
 	@echo "... Controlador/List_Posiciones.i"
 	@echo "... Controlador/List_Posiciones.s"
-	@echo "... Controlador/Matriz.o"
-	@echo "... Controlador/Matriz.i"
-	@echo "... Controlador/Matriz.s"
 	@echo "... Controlador/Pathfinding.o"
 	@echo "... Controlador/Pathfinding.i"
 	@echo "... Controlador/Pathfinding.s"

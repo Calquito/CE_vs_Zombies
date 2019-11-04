@@ -1,6 +1,12 @@
-//
-// Created by isaac4918 on 1/11/19.
-//
+/**
+ * @file List_Posiciones.h
+ * @version 1.0
+ * @date 01/11/2019
+ * @author Isaac Araya
+ * @title Lista de posiciones
+ * @brief Estructura de datos para alamacenar posiciones
+ * */
+
 
 #ifndef TECVSZOMBIES_LIST_POSICIONES_H
 #define TECVSZOMBIES_LIST_POSICIONES_H
@@ -11,11 +17,11 @@
 
 using namespace std;
 
-/*!
-
-*Node that saves the data of the movie
-
-*/
+/**
+*
+*@brief Nodo que almacena las posiciones x y y
+*
+**/
 
 
 
@@ -29,27 +35,18 @@ public:
 
 };
 
-/*!
-
-*Linked list to save all the movies get from the csv
-
-*/
+/**
+*@brief Linked list que almacena las posiciones
+**/
 
 class List_Posiciones {
 
 
-
-    /*!
-
-   *Linked list method to display the linked list
-
-   * Use tmp node to display each node until linked list is NULL
-
-
-
-   */
-
 public:
+
+    /**
+     * @brief display es un método para mostrar las posiciones
+     * */
 
     void display(){
 
@@ -69,30 +66,12 @@ public:
 
 
 
-    /*!
-
-*Linked list method to insert at the end of the list.
-
-* Pass movie data and make a node that saves all of it's info
-
-@param[in]  newdata   name of the movie to be inserted
-
-@param[in]  year   year of the movie to be inserted
-
-@param[in]  IMBDlink   IMDB link to search the url elements
-
-@param[in]  director   director  of the movie to be inserted
-
-
-
-
-
-*/
-
-
-
 public:
     Node *head=NULL;
+
+    /**
+     * @brief removeLastNode es un método para quitar la ultima posicion de la lista
+     * */
 
     Node* removeLastNode()
 
@@ -141,7 +120,9 @@ public:
     }
 
 
-
+    /**
+     * @brief removeFirstNode es un método que permite quitar la primera posicion de la lista
+     * */
     void removeFirstNode()
 
     {
@@ -165,6 +146,11 @@ public:
 
 
 
+    /**
+     * @brief insert es un método para insertar elementos a la lista
+     * @param x es la posicion x del nuevo elemento
+     * @param y es la posicion y del nuevo elemento
+     * */
 
     void insert(int x, int y) {
 
@@ -192,11 +178,6 @@ public:
 
         }
 
-/**
-
-* Move through the list to the last that is NULL
-
-*/
 
         while (last->next != NULL)
 
@@ -209,6 +190,11 @@ public:
         return;
 
     }
+
+    /**
+     * @brief GetNth es un método que retorna el nodo de la lista en la posicion determinada
+     * @param index es el indice que se buscará en la lista
+     * */
 
     Node* GetNth( int index) {
         if (head != NULL) {
@@ -228,6 +214,10 @@ public:
         }
 
     }
+
+    /**
+     * @brief getsize es un método que devuelve el tamaño de la lista
+     * */
 
     int getsize() {
         int size = 0;

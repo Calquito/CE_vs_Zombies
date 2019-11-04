@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/GeneticAlg.cpp" "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/TECVSZOMBIES.dir/Controlador/GeneticAlg.cpp.o"
   "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Juego.cpp" "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/TECVSZOMBIES.dir/Controlador/Juego.cpp.o"
   "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/List_Posiciones.cpp" "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.o"
-  "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Matriz.cpp" "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.o"
   "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Pathfinding.cpp" "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.o"
   "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Curso.cpp" "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/TECVSZOMBIES.dir/Cursos/Curso.cpp.o"
   "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Pos.cpp" "/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles/TECVSZOMBIES.dir/Cursos/Pos.cpp.o"

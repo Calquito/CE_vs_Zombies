@@ -4,7 +4,7 @@ project(TECVSZOMBIES)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 add_executable(TECVSZOMBIES main.cpp Controlador/GeneticAlg.cpp Controlador/GeneticAlg.h Controlador/Juego.cpp Controlador/Juego.h
-        Cursos/Curso.h Cursos/Curso.cpp Estudiantes/Estudiante.h Estudiantes/Estudiante.cpp Estructuras/ListaCursos.cpp Estructuras/ListaCursos.h Estructuras/ListaEstudiantes.cpp Estructuras/ListaEstudiantes.h Cursos/Pos.cpp Cursos/Pos.h Controlador/Backtracking.cpp Controlador/Backtracking.h Controlador/Matriz.cpp Controlador/Matriz.h Controlador/List_Posiciones.cpp Controlador/List_Posiciones.h Controlador/Pathfinding.cpp Controlador/Pathfinding.h)
+        Cursos/Curso.h Cursos/Curso.cpp Estudiantes/Estudiante.h Estudiantes/Estudiante.cpp Estructuras/ListaCursos.cpp Estructuras/ListaCursos.h Estructuras/ListaEstudiantes.cpp Estructuras/ListaEstudiantes.h Cursos/Pos.cpp Cursos/Pos.h Controlador/Backtracking.cpp Controlador/Backtracking.h Controlador/List_Posiciones.cpp Controlador/List_Posiciones.h Controlador/Pathfinding.cpp Controlador/Pathfinding.h)
 
 # Look for required libraries
 set(requiredlibs)

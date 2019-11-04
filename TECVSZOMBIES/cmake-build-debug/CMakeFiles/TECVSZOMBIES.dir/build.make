@@ -174,22 +174,9 @@ CMakeFiles/TECVSZOMBIES.dir/Controlador/Backtracking.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TECVSZOMBIES.dir/Controlador/Backtracking.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Backtracking.cpp -o CMakeFiles/TECVSZOMBIES.dir/Controlador/Backtracking.cpp.s
 
-CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.o: CMakeFiles/TECVSZOMBIES.dir/flags.make
-CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.o: ../Controlador/Matriz.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.o -c /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Matriz.cpp
-
-CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Matriz.cpp > CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.i
-
-CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Matriz.cpp -o CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.s
-
 CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.o: CMakeFiles/TECVSZOMBIES.dir/flags.make
 CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.o: ../Controlador/List_Posiciones.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.o -c /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/List_Posiciones.cpp
 
 CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.s: cmake_force
 
 CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.o: CMakeFiles/TECVSZOMBIES.dir/flags.make
 CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.o: ../Controlador/Pathfinding.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.o -c /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Pathfinding.cpp
 
 CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.i: cmake_force
@@ -224,7 +211,6 @@ TECVSZOMBIES_OBJECTS = \
 "CMakeFiles/TECVSZOMBIES.dir/Estructuras/ListaEstudiantes.cpp.o" \
 "CMakeFiles/TECVSZOMBIES.dir/Cursos/Pos.cpp.o" \
 "CMakeFiles/TECVSZOMBIES.dir/Controlador/Backtracking.cpp.o" \
-"CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.o" \
 "CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.o" \
 "CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.o"
 
@@ -240,12 +226,11 @@ TECVSZOMBIES: CMakeFiles/TECVSZOMBIES.dir/Estructuras/ListaCursos.cpp.o
 TECVSZOMBIES: CMakeFiles/TECVSZOMBIES.dir/Estructuras/ListaEstudiantes.cpp.o
 TECVSZOMBIES: CMakeFiles/TECVSZOMBIES.dir/Cursos/Pos.cpp.o
 TECVSZOMBIES: CMakeFiles/TECVSZOMBIES.dir/Controlador/Backtracking.cpp.o
-TECVSZOMBIES: CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.o
 TECVSZOMBIES: CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.o
 TECVSZOMBIES: CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.o
 TECVSZOMBIES: CMakeFiles/TECVSZOMBIES.dir/build.make
 TECVSZOMBIES: CMakeFiles/TECVSZOMBIES.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable TECVSZOMBIES"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable TECVSZOMBIES"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TECVSZOMBIES.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

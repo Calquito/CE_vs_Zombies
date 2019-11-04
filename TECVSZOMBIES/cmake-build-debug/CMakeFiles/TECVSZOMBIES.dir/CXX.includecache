@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Backtracking.cpp
-Backtracking.h
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Backtracking.h
-
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Backtracking.h
 stdio.h
 -
 List_Posiciones.h
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/List_Posiciones.h
-
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/GeneticAlg.cpp
-GeneticAlg.h
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/GeneticAlg.h
 
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/GeneticAlg.h
 
@@ -50,21 +42,11 @@ vector
 unistd.h
 -
 
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/List_Posiciones.cpp
-List_Posiciones.h
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/List_Posiciones.h
-
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/List_Posiciones.h
 string
 -
 iostream
 -
-
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Matriz.cpp
-
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Pathfinding.cpp
-Pathfinding.h
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Pathfinding.h
 
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Controlador/Pathfinding.h
 List_Posiciones.h
@@ -72,23 +54,11 @@ List_Posiciones.h
 bits/stdc++.h
 -
 
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Curso.cpp
-Curso.h
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Curso.h
-
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Curso.h
 Pos.h
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Pos.h
 
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Pos.cpp
-Pos.h
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Pos.h
-
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Pos.h
-
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaCursos.cpp
-ListaCursos.h
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaCursos.h
 
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaCursos.h
 iostream
@@ -96,18 +66,10 @@ iostream
 ../Cursos/Curso.h
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Cursos/Curso.h
 
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaEstudiantes.cpp
-ListaEstudiantes.h
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaEstudiantes.h
-
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estructuras/ListaEstudiantes.h
 iostream
 -
 ../Estudiantes/Estudiante.h
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estudiantes/Estudiante.h
-
-/home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estudiantes/Estudiante.cpp
-Estudiante.h
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estudiantes/Estudiante.h
 
 /home/isaac4918/Escritorio/jhkh/TECVSZOMBIES/Estudiantes/Estudiante.h

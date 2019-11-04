@@ -1,6 +1,12 @@
-//
-// Created by isaac4918 on 29/10/19.
-//
+/**
+ * @file ListaEstudiantes.h
+ * @version 1.0
+ * @date 01/11/2019
+ * @author Allan Calderón
+ * @title Lista de estudiantes
+ * @brief Estructura de datos para alamacenar estudiantes
+ * */
+
 
 #ifndef TECVSZOMBIES_LISTAESTUDIANTES_H
 #define TECVSZOMBIES_LISTAESTUDIANTES_H
@@ -13,8 +19,7 @@
 using namespace std;
 
 /**
- * Clase lista
- * Esta clase es una estructura de datos de tipo lista enlazada que está diseñada para almacenar los objetos estudiantes
+ * @brief Esta clase es una estructura de datos de tipo lista enlazada que está diseñada para almacenar los objetos estudiantes
  * que son los que conforman sus nodos
  * */
 
@@ -25,7 +30,7 @@ private:
 public:
 
     /**
-     * Constructor de la clase que inicializa el head y el largo de la lista
+     * @brief Constructor de la clase que inicializa el head y el largo de la lista
      * */
     ListaEstudiantes(){
         len = 0;
@@ -33,7 +38,7 @@ public:
     }
 
     /**
-     * Método insert que funciona para ingresar una pelicula a la lista enviandola al final de la lista
+     * @brief Método insert que funciona para ingresar una pelicula a la lista enviandola al final de la lista
      * @param peli_es el nodo de tipo pelicula que será insertado en la lista
      * */
     void insert(Estudiante *student){
@@ -52,7 +57,7 @@ public:
     }
 
     /**
-     * Método que permite imprimir información de la lista en consola, funcional para la prueba de otros métodos
+     * @brief Método que permite imprimir información de la lista en consola, funcional para la prueba de otros métodos
      * */
 
     void printL(){
@@ -76,7 +81,7 @@ public:
     }
 
     /**
-     * Método que permite borrar el primer elemento de la lista
+     * @brief Método que permite borrar el primer elemento de la lista
      * */
 
     void deleFirst(){
@@ -99,7 +104,7 @@ public:
     }
 
     /**
-     * Método que permite eliminar el ultimo elemento de la lista
+     * @brief Método que permite eliminar el ultimo elemento de la lista
      * */
 
     void deleLast(){
@@ -121,7 +126,7 @@ public:
 
     }
     /**
-     * Método que permite acceder a los nodos de la lista por una posición
+     * @brief Método que permite acceder a los nodos de la lista por una posición
      *
      * @param pos_es el numero de la posición a la que queremos acceder de la lista
      * */

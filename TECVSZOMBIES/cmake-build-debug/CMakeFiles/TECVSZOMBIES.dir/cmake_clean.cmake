@@ -8,7 +8,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/TECVSZOMBIES.dir/Estructuras/ListaEstudiantes.cpp.o"
   "CMakeFiles/TECVSZOMBIES.dir/Cursos/Pos.cpp.o"
   "CMakeFiles/TECVSZOMBIES.dir/Controlador/Backtracking.cpp.o"
-  "CMakeFiles/TECVSZOMBIES.dir/Controlador/Matriz.cpp.o"
   "CMakeFiles/TECVSZOMBIES.dir/Controlador/List_Posiciones.cpp.o"
   "CMakeFiles/TECVSZOMBIES.dir/Controlador/Pathfinding.cpp.o"
   "TECVSZOMBIES.pdb"

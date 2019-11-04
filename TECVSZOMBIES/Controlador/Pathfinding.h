@@ -1,6 +1,11 @@
-//
-// Created by isaac4918 on 1/11/19.
-//
+/**
+ * @file Pathfinding.h
+ * @version 1.0
+ * @date 01/11/2019
+ * @author Isaac Araya
+ * @title Algoritmo A* Pathfinding
+ * @brief Clase que encuentra rutas por medio del algoritmo A*
+ * */
 
 #ifndef TECVSZOMBIES_PATHFINDING_H
 #define TECVSZOMBIES_PATHFINDING_H
@@ -36,8 +41,6 @@ private:
 
     typedef pair<double, pair<int, int>> pPair;
 
-
-
 // A structure to hold the neccesary parameters
 
     struct cell
@@ -54,16 +57,11 @@ private:
 
     };
 
-
-
 // A Utility Function to check whether given cell (row, col)
-
 // is a valid cell or not.
 
     bool isValid(int row, int col)
-
     {
-
         // Returns true if row number and column number
 
         // is in range
@@ -74,133 +72,70 @@ private:
 
     }
 
-
-
 // A Utility Function to check whether the given cell is
 
 // blocked or not
 
     bool isUnBlocked(int grid[][COL], int row, int col)
-
     {
-
         // Returns true if the cell is not blocked else false
-
         if (grid[row][col] == 1)
-
             return (true);
-
         else
-
             return (false);
-
     }
 
-
-
 // A Utility Function to check whether destination cell has
-
 // been reached or not
 
     bool isDestination(int row, int col, Pair dest)
-
     {
-
         if (row == dest.first && col == dest.second)
-
             return (true);
-
         else
-
             return (false);
-
     }
-
-
 
 // A Utility Function to calculate the 'h' heuristics.
 
     double calculateHValue(int row, int col, Pair dest)
-
     {
-
         // Return using the distance formula
-
-        return ((double)sqrt ((row-dest.first)*(row-dest.first)
-
-                              + (col-dest.second)*(col-dest.second)));
-
+        return ((double)sqrt ((row-dest.first)*(row-dest.first) + (col-dest.second)*(col-dest.second)));
     }
-
-
 
 // A Utility Function to trace the path from the source
-
 // to destination
-
     List_Posiciones * tracePath(cell cellDetails[][COL], Pair dest)
-
     {
-
         printf ("\nThe Path is ");
-
         int row = dest.first;
-
         int col = dest.second;
-
         stack<Pair> Path;
-
         while (!(cellDetails[row][col].parent_i == row
-
                  && cellDetails[row][col].parent_j == col ))
-
         {
-
             Path.push (make_pair (row, col));
-
             int temp_row = cellDetails[row][col].parent_i;
-
             int temp_col = cellDetails[row][col].parent_j;
-
             row = temp_row;
-
             col = temp_col;
-
         }
-
         Path.push (make_pair (row, col));
-
         while (!Path.empty())
-
         {
-
             pair<int,int> p = Path.top();
-
             Path.pop();
-
             listPosiciones->insert(p.first,p.second);
-
             printf("-> (%d,%d) ",p.first,p.second);
-
         }
-
-
         return listPosiciones;
-
     }
-
-
-
 public:
-
 // A Function to find the shortest path between
-
 // a given source cell to a destination cell according
-
 // to A* Search Algorithm
-
     List_Posiciones* aStarSearch(int grid[][COL], Pair src, Pair dest)
-
     {
 
         // If the source is out of range
